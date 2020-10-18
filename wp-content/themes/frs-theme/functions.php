@@ -53,8 +53,9 @@ add_image_size('product_image_small', 400, 400, false);
 add_image_size('product_image_large', 700, 700, false);
 
 
-// Menu Support
+// Theme Support
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 
 // Register Menus
@@ -63,3 +64,5 @@ register_nav_menus(
         'top-menu' => __('Top Menu', 'theme'),
     )
 );
+
+
