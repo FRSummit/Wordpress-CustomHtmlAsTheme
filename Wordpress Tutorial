@@ -24,6 +24,19 @@ How to create a custome theme (How to convert an HTML Template to a WordPress Th
 
 #-> Go to Plagin and search for "Classic Editor". Install and activate this for editing.
 #-> Go to Plagin and search for "Advanced Custom Field". Install and activate this. Now we can see the "Custom Fields" in the left menu.
+
+
+#-> Page Create
+	1. Create a new php file inside "wp_content > themes > frs-theme" folder and named it as "template-blog.php"
+	2. Add <?php/* Template name: Blog */get_header();?> and <?php get_footer();?> inside "template-blog.php". These will contains the header and footer and the "/* Template Name: Blog */" will say that it is blog page to wordpress admin admin.
+	3. Create a new page to wordpress admin named Blog and published it.
+	4. Go to Appearance > Menus, select the Blog from left list and Added it to menu and save. It will show the Blog to the website menu.
+	5. Inside page select Blog and inside Blog select the Default template as Blog from the right items and update this.
+	6. Go to website and reload. Blog will be there in the nav menu. Click the Blog. There will show nothing instead header and footer as we didn't add any code inside template-blog.php.
+	7. Open template-blog.php and write code inside header and footer tag. [<?php/* Template name: Blog */get_header();?> and <?php get_footer();?>]
+	8. Reload the Blog page. You can see the changes.
+
+    
 #-> 
 #-> 
 #-> 
