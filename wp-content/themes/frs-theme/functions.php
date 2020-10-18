@@ -47,6 +47,16 @@ function addjs() {
 }
 add_action('wp_enqueue_scripts', 'addjs');
 
+// // Load Map Script for Contact Us Page
+
+// function load_map_js() {
+//     if(is_page(93)) {
+//         wp_register_script('google_map_js', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE&callback=initMap', '', false);
+//         wp_enqueue_script('google_map_js');
+//     }
+// }
+// add_action('wp_enqueue_scripts', 'load_map_js');
+
 
 // Custom image sizes
 add_image_size('product_image_small', 400, 400, false);

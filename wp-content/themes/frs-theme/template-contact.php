@@ -19,7 +19,7 @@ get_header();
 <section class="story-area left-text center-sm-text">
         <div class="container">
                 <div class="heading">
-                        <img class="heading-img" src="images/heading_logo.png" alt="">
+                        <img class="heading-img" src="<?php bloginfo('template_directory');?>/images/heading_logo.png" alt="">
                         <h2>Say hello</h2>
                         <h5 class="mt-10 mb-30">Say hello, send us a message</h5>
                         <p class="mx-w-700x mlr-auto">Proin dictum viverra varius. Etiam vulputate libero dui, at pretium
@@ -42,8 +42,9 @@ get_header();
 </section>
 
 
-<div class="map-area h-700x mb--30">
+<!-- <div class="map-area h-700x mb--30">
     <div id="map" style="height:100%;"></div>
-</div><!-- map-area -->
+</div> -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1106.131889967534!2d90.27234682923162!3d24.640667217994263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDM4JzI2LjQiTiA5MMKwMTYnMjIuNCJF!5e1!3m2!1sen!2sbd!4v1603031551239!5m2!1sen!2sbd" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 <?php get_footer();?>
