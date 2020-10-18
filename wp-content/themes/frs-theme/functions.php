@@ -58,6 +58,20 @@ add_action('wp_enqueue_scripts', 'addjs');
 // add_action('wp_enqueue_scripts', 'load_map_js');
 
 
+// Load Elements page's js
+
+function elements_page_js() {
+    if(is_page(99)) {
+        // wp_register_script('waypoints', get_template_directory_uri() . '/plugin-frameworks/jquery.waypoints.min.js', array(), 1, 1, 1);
+        // wp_enqueue_script('waypoints');
+
+        // wp_register_script('progressbar', get_template_directory_uri() . '/plugin-frameworks/progressbar.min.js', array(), 1, 1, 1);
+        // wp_enqueue_script('progressbar');
+    }
+}
+add_action('wp_enqueue_scripts', 'elements_page_js');
+
+
 // Custom image sizes
 add_image_size('product_image_small', 400, 400, false);
 add_image_size('product_image_large', 700, 700, false);
