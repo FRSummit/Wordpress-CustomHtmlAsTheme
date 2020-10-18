@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<section class="bg-4 h-500x main-slider pos-relative">
+<section class="bg-4 h-500x main-slider pos-relative" style="background:url(<?php the_post_thumbnail_url('hero')?>) !important; background-size:cover !important">
         <div class="triangle-up pos-bottom"></div>
         <div class="container h-100">
                 <div class="dplay-tbl">

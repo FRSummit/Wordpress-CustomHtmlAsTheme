@@ -51,6 +51,7 @@ add_action('wp_enqueue_scripts', 'addjs');
 // Custom image sizes
 add_image_size('product_image_small', 400, 400, false);
 add_image_size('product_image_large', 700, 700, false);
+add_image_size('hero', 1200, 600, true);
 
 
 // Theme Support
