@@ -1,0 +1,9 @@
+Sparrow Wordpress
+
+DB Name : wordpress_ecommerce
+DB User : frskynet
+DB User Pass: frskynet
+
+Username: frskynet
+password: frskynet
+email   : frsummit@simplexhub.com

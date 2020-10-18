@@ -1,0 +1,74 @@
+How to create a custome theme (How to convert an HTML Template to a WordPress Theme (2019) - https://www.youtube.com/watch?v=FN5jhyspVXc&ab_channel=MrDigital)
+
+1. Install Wordpress in local directory
+2. Open it in editor (VS Code / Sublimtext)
+3. Delete all from "wp_content > themes" folder
+3. Create index.php inside "wp_content > themes" folder
+4. Create new folder inside "wp_content > themes" folder	[Folder name frs-theme - it is just our custom theme]
+5. Create some php and css files inside "wp_content > themes > frs-theme" folder	[style.css, index.php, functions.php, page.php, single.php, front-page.php, header.php, footer.php, archive.php, search.php, 404.php]
+6. Create an image and resize as 880x660 px and named as screenshot and save it to "wp_content > themes > frs-theme" folder
+7. Download a html templete from any site.
+8. Extract it
+9. Open index.html in any editor
+10. Copy from <!Doctype html> to </header> and paste it to our header.php files and copy from <footer> to </html> and paste it to our footer.php file. Copy the rest of the code inside header and footer - and paste it to front-page.
+11. Create a new page using wordpress admin named "Home"
+12. Go to "Settings > Reading" and change homepage displays as "A static page". Make homepage as Home and save it.
+13. Now Permalink, select "Post Name" from "Common Settings" and save it.
+14. Open the site in a new tab & you should see the static page.
+15. Add <?php get_header();?> and <?php get_footer();?> to front-page.php
+16. Refresh the tab & you should see the header, front-page and footer.
+17. Select all of the style, js, assets folder, copy those and paste it in "wp_content > themes > frs-theme" folder.
+18. Add <?php wp_head();?> to header.php and edit functions.php as adding header links and styles.
+19. Add <?php wp_footer();?> to footer.php and edit functions.php as adding footer js.
+20. Replace all images src adding by this in front of all <?php bloginfo('template_directory');?>/images/ 
+
+#-> Go to Plagin and search for "Classic Editor". Install and activate this for editing.
+#-> Go to Plagin and search for "Advanced Custom Field". Install and activate this. Now we can see the "Custom Fields" in the left menu.
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+#-> 
+
+Other URLs
+=====================================
+1. https://www.youtube.com/results?search_query=static+website+theme+wordpress&page=&utm_source=opensearch
+2. https://www.youtube.com/watch?v=0BtgBk10QUY&ab_channel=DailyTuition
+3. https://www.youtube.com/watch?v=CZRgvAtwpxw&ab_channel=ElegantThemes
