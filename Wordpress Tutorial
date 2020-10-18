@@ -66,6 +66,16 @@ How to create a custome theme (How to convert an HTML Template to a WordPress Th
 #-> 
 #-> 
 #-> 
+#-> How to Move Wordpress from Local Server to Live Website (https://www.youtube.com/watch?v=E9YTRLm9SQs&ab_channel=WebsiteLearners)
+	1. Part 1: Setup a new Wordpress site on a web host 
+		1. Hosting Account - This will provides the space for storing the website's files on the internet
+		2. Buy a hosting account
+		3. Install wordpress inside your domain website.
+	2. Part 2: Move the contents from local site to the live website.
+		1. Install a plagin on both of our websites. [Plagin name : All-in-One WP Migration]
+		2. Using the plagin - Export the contents of the local site into a file. [Go to admin Dashboard, select All-in-One WP Migration > Export, Export To > File, then Download and close it]
+		3. Bring that file into our live site. [Go to live website's admin Dashboard, select All-in-One WP Migration > Import, Import From > File, Select the exported file from local directory]
+		4. Reload the live site, you can see the local site's every contents into your love site.
 
 Other URLs
 =====================================
