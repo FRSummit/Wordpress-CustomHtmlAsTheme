@@ -108,8 +108,15 @@ How to create a custome theme (How to convert an HTML Template to a WordPress Th
 		6.26. Go to Appearance > Widget. We can see the Blog Sidebar there in the right.
 		6.27. Drag "recent Post" from the right list and drop it to "Blog Sidebar". Name the title as "Latest Post" and save it.
 		6.28. Now Reload the Blog page. You can see the Blog List there on the left.
-		6.29. 
-#-> 
+		6.29. Go to post. Add some tag from the right. Ex: Tag 1, Tag 2, Tag 3. Now Update the post.
+		6.30. Reload the post. Nothing happen.
+		6.31. Go to single.php. Add the tag code bellow the post loop end. <?php the_tags();?>
+		6.32. Reload the post. Changes are bellow the post.
+
+
+#-> Paging
+	1. Go to archive.php
+	2. 
 #-> 
 #-> 
 #-> 
