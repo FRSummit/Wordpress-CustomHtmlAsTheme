@@ -102,12 +102,12 @@ How to create a custome theme (How to convert an HTML Template to a WordPress Th
 
 
 		6.22. The avobe code is for Blog posts list and Select a single blog which take to single.php page and contains that Blog post's details.
-		6.23. 
-		6.24. 
-		6.25. 
-		6.26. 
-		6.27. 
-		6.28. 
+		6.23. Now copy register-sidebar from function and paste it bellow. Remane and give id as Page Sidebar to Blog Sidebar. This will create a Blog Sidebar.
+		6.24. Copy sidebar.php code <?php dynamic_sidebar('page-sidebar');?>, go to archive.php and replace it by <?php get_sidebar();?>. Now rename the parameter as 'blog-sidebar'
+		6.25. Reload the Blog page (Blog List page). Nothing happen. It just remove the page sidebar.
+		6.26. Go to Appearance > Widget. We can see the Blog Sidebar there in the right.
+		6.27. Drag "recent Post" from the right list and drop it to "Blog Sidebar". Name the title as "Latest Post" and save it.
+		6.28. Now Reload the Blog page. You can see the Blog List there on the left.
 		6.29. 
 #-> 
 #-> 

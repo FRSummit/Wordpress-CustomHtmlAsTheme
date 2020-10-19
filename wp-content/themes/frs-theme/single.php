@@ -5,7 +5,8 @@
                 <div class="container">
                         <div class="row">
                                 <div class="col-lg-3">
-                                        <?php get_sidebar();?>
+                                        <!-- <?php /*get_sidebar();*/?> -->
+                                        <?php dynamic_sidebar('blog-sidebar');?>
                                 </div>
                                 <div class="col-lg-9">
                                         <?php if(has_post_thumbnail()):?>

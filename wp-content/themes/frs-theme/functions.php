@@ -93,10 +93,22 @@ register_nav_menus(
 
 
 // Add a widget
+//page sidebar
 register_sidebar(
     array(
         'name' => 'Page Sidebar',
         'id' => 'page-sidebar',
+        'class' => '',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
+    )
+);
+
+//blog sidebar
+register_sidebar(
+    array(
+        'name' => 'Blog Sidebar',
+        'id' => 'blog-sidebar',
         'class' => '',
         'before_title' => '<h4>',
         'after_title' => '</h4>'
