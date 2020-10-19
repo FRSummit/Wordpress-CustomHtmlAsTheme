@@ -37,7 +37,78 @@ How to create a custome theme (How to convert an HTML Template to a WordPress Th
 	8. Reload the Blog page. You can see the changes.
 
     
-#-> 
+#-> Creata a page sidebar - Widget, This is a demo of Blog list and Blog Details page.
+	1. Go to function and add register_sidebar() code
+	2. Reload wordpress admin page, you can see the "Widget" in the "Appearance"
+	3. Go to the Widget and you can see the "Page Sidebar" on the right side.
+	4. Now you can drag & drop anything we want.
+	5. We can also create dynamic page here.
+	6. Implement into .php files/pages
+		6.1. Create a new file sidebar.php
+		6.2. Add <?php dynamic_sidebar('page-sidebar');?> to the top. "page-sidebar" is as we used in function as id 'page-sidebar'
+		6.3. Add <?php get_sidebar();?> to the general page where we want to add sidebar. Example: go to front-page.php and added into the post section (the last section).
+		6.4. Reload the front-page/Home page. We can see the changes. It is clickable which contains the page link.
+		6.5. Now move all of the code from front-page.php to single.php.
+		6.6. Add header & footer php code.
+		6.7. Go to Wordpress admin page and open Posts. Create a new post named "Test Blog Post". Add some lorem-ipsum text inside paragraph.
+		6.8. Create a new category Named Blog. Add that and published it.
+		6.9. Now go to Appearance > Menus. Open Categories from the left "Add menu items" list. Select "Blog" and added to "Menu structure". Now Save it.
+		6.10. Now If we click here it will show nothing.
+		6.11. Now Copy our single.php page all code and paste it to archive.php. Refresh that page. You can see the changes.
+		6.12. Create one more post named "Test Blog Post 2". Save it  and publish it as Blog category.
+		6.13. Open archive.php
+		6.14. Add <h1><?php the_title();?></h1> inside the loop. This will add the title at the top of the blog content.
+		6.15. Now change <?php the_content();?> to <?php the_excerpt();?>. This is the short form or summery of the Blog.
+		6.16. Reload the Blog page. See the changes.
+		6.17. Add an image avibe the title tag. [<img src="<?php the_post_thumbnail_url('post_image');?>" alt="<?php the_title();?>" class="img-fluid mb-5">]
+		6.18. Reload the page. No image here.
+		6.19. Modify <h1><?php the_title();?></h1> as <a href="<?php the_permalink();?>"><h1><?php the_title();?></h1></a>. This will take us the Blog details page.
+		6.20. Add condition for image for both pages (archive.php and single.php) as bellow: 
+			
+				<?php if(has_post_thumbnail()):?>
+					<div><img src="<?php the_post_thumbnail_url('post_image');?>" alt="<?php the_title();?>" class="img-fluid mb-5"></div>
+				<?php endif;?>
+
+		6.21. The whole code will look like this:
+
+				archive.php
+			
+				<?php if(have_posts()) : while(have_posts()) : the_post();?>
+					<?php if(has_post_thumbnail()):?>
+						<a href="<?php the_permalink();?>">
+							<div><img src="<?php the_post_thumbnail_url('post_image');?>" alt="<?php the_title();?>" class="img-fluid mb-5"></div>
+                        </a>
+					<?php endif;?>
+                                            
+					<a href="<?php the_permalink();?>"><h1><?php the_title();?></h1></a>
+					<!-- <?php /*the_content();*/?> -->
+					<?php the_excerpt();?>
+
+				<?php endwhile; else: endif;?>
+
+				single.php
+				
+				<div class="col-lg-9">
+					<?php if(has_post_thumbnail()):?>
+						<div><img src="<?php the_post_thumbnail_url('post_image');?>" alt="<?php the_title();?>" class="img-fluid mb-5"></div>
+					<?php endif;?>
+                                        
+					<h1><?php the_title();?></h1>
+
+					<?php if(have_posts()) : while(have_posts()) : the_post();?>
+						<?php the_content();?>
+					<?php endwhile; else: endif;?>
+				</div>
+
+
+		6.22. The avobe code is for Blog posts list and Select a single blog which take to single.php page and contains that Blog post's details.
+		6.23. 
+		6.24. 
+		6.25. 
+		6.26. 
+		6.27. 
+		6.28. 
+		6.29. 
 #-> 
 #-> 
 #-> 

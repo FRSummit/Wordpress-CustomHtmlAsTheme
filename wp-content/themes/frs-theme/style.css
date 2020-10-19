@@ -2,3 +2,10 @@
 Theme Name : FRS Theme
 Author Name: F R Summit
  **/
+
+ .blog-post {
+     padding: 1rem;
+     margin-bottom: 2rem;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+     border-radius: 5rem;
+ }

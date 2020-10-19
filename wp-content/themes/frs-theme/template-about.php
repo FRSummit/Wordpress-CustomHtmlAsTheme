@@ -168,4 +168,14 @@ get_header();
         </div><!-- container-->
 </section><!-- counter-section-->
 
+<section>
+        <div class="content">
+                <div class="container">
+                        <?php if(have_posts()) : while(have_posts()) : the_post();?>
+                                <?php the_content();?>
+                        <?php endwhile; else: endif;?>
+                </div>
+        </div>
+</section>
+
 <?php get_footer();?>

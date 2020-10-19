@@ -18,7 +18,8 @@ function load_stylesheets() {
     wp_register_style('styles', get_template_directory_uri() . '/common/styles.css', array(), 1, 'all');
     wp_enqueue_style('styles');
 
-    wp_register_style('custom', get_template_directory_uri() . '/custom.css', array(), 1, 'all');
+    // wp_register_style('custom', get_template_directory_uri() . '/custom.css', array(), 1, 'all');
+    wp_register_style('custom', get_template_directory_uri() . '/style.css', array(), 1, 'all');
     wp_enqueue_style('custom');
 }
 
@@ -87,6 +88,18 @@ add_theme_support('post-thumbnails');
 register_nav_menus(
     array(
         'top-menu' => __('Top Menu', 'theme'),
+    )
+);
+
+
+// Add a widget
+register_sidebar(
+    array(
+        'name' => 'Page Sidebar',
+        'id' => 'page-sidebar',
+        'class' => '',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>'
     )
 );
 
