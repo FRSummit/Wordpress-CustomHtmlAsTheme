@@ -133,7 +133,16 @@ How to create a custome theme (How to convert an HTML Template to a WordPress Th
 	3. Reload the Blog list page. Nothing happen.
 	4. Go to Settings > Reading, set Blog pages show at most = 1 instead 10. Save it.
 	5. Reload the Blog list. See the changes.
-#-> 
+	
+	
+#-> Calling Another php file as fragment/component/parts. Ex: Index page has Sidebar
+	1. Create sidebar.php
+	2. Cut sidebar code from index.php and paste to sidebar.php
+	3. Go to index.php
+	4. In that part where sidebar code was present, add below code
+		<?php get_template_part('sidebar')?>
+		
+		
 #-> 
 #-> 
 #-> 
