@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress_ecommerce' );
+define( 'DB_NAME', 'wordpress_custom_theme' );
 
 /** MySQL database username */
-define( 'DB_USER', 'frskynet' );
+define( 'DB_USER', 'frsummit' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'frskynet' );
+define( 'DB_PASSWORD', '12345' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

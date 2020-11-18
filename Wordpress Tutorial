@@ -1,5 +1,11 @@
 How to create a custome theme (How to convert an HTML Template to a WordPress Theme (2019) - https://www.youtube.com/watch?v=FN5jhyspVXc&ab_channel=MrDigital)
 
+Site
+=============================
+Username: frsummit
+password: frs@123
+email: frsummit1@gmail.com
+
 1. Install Wordpress in local directory
 2. Open it in editor (VS Code / Sublimtext)
 3. Delete all from "wp_content > themes" folder
